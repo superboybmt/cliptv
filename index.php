@@ -29,7 +29,7 @@
 
 <body>
     <?php
-    $type = $_GET["type"] ? $_GET["type"] : 0; // 0 - tivi ngang; 1 - tivi xoay trai; 2 - tivi xoay phải (optional)
+    $type = isset($_GET["type"]) ? $_GET["type"] : 0; // 0 - tivi ngang; 1 - tivi xoay trai; 2 - tivi xoay phải (optional)
 
     // thay LIST_ID bằng ID của playlist trên Youtube
     switch ($type) {
