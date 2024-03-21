@@ -50,7 +50,7 @@
         </iframe>
         ';
 
-    echo $content
+    echo $content;
     ?>
 
     <script>
