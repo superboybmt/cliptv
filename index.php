@@ -33,8 +33,12 @@
 
     // thay LIST_ID bằng ID của playlist trên Youtube
     switch ($type) {
-        case '1':
+        case '1':   // xoay trai
             $LIST_ID = "PL9gJ-ihe1XyA9of_NnG3R0pQ64lXDbEmE";
+            break;
+        
+        case '2':   // xoay phai
+            $LIST_ID = "PL9gJ-ihe1XyDYAFeWJMI_7wLb_bSBO1ux";
             break;
 
         default:
