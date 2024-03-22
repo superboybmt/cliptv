@@ -41,7 +41,7 @@
             $LIST_ID = "PL9gJ-ihe1XyDYAFeWJMI_7wLb_bSBO1ux";
             break;
 
-        default:
+        default:    // case 0 & other values
             $LIST_ID = "PL9gJ-ihe1XyDgSHlYJWCxvwRjvkdvLQmX";
             break;
     }
