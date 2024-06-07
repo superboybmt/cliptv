@@ -29,20 +29,23 @@
 
 <body>
     <?php
-    $type = isset($_GET["type"]) ? $_GET["type"] : 0; // 0 - tivi ngang; 1 - tivi xoay trai; 2 - tivi xoay phải (optional)
+    // 0 - tivi ngang
+    // 1 - tivi xoay trai
+    // 2 - tivi xoay phải (optional)
+    $xoay = isset($_GET["xoay"]) ? $_GET["xoay"] : 0; 
 
     // thay LIST_ID bằng ID của playlist trên Youtube
-    switch ($type) {
+    switch ($xoay) {
         case '1':   // xoay trai
-            $LIST_ID = "PL9gJ-ihe1XyA9of_NnG3R0pQ64lXDbEmE";
+            $LIST_ID = "PLxXOutXZNyFofOJMMZauQZ-AMGh7FB7ac";
             break;
         
         case '2':   // xoay phai
-            $LIST_ID = "PL9gJ-ihe1XyDYAFeWJMI_7wLb_bSBO1ux";
+            $LIST_ID = "PLxXOutXZNyFpA0umgqL4OAIcNosQni-mU";
             break;
 
         default:    // case 0 & other values
-            $LIST_ID = "PL9gJ-ihe1XyDgSHlYJWCxvwRjvkdvLQmX";
+            $LIST_ID = "PLxXOutXZNyFrKifCtNbdv45e2zwy2u_Ti";
             break;
     }
 
